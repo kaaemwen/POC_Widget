@@ -2,5 +2,6 @@
     <string name="app_name">POC_Widget</string>
     <string name="appwidget_text">PRINCESS WIDGET</string>
     <string name="appwidget_btn">Princess ?</string>
+    <string name="appwidget_btn_two">Not here !</string>
     <string name="add_widget">Add widget</string>
 </resources>

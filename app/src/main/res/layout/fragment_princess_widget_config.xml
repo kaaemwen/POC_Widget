@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    tools:context=".PrincessWidgetConfigActivity">
+    
+    <RadioGroup
+        android:id="@+id/radioGroupButtonSelection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <RadioButton
+            android:id="@+id/radioOneButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="One Button"
+            android:checked="false"/>
+
+        <RadioButton
+            android:id="@+id/radioTwoButtons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Two Buttons"
+            android:checked="true"/>
+
+    </RadioGroup>
+    
+    <Button
+        android:id="@+id/buttonValidConfig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroupButtonSelection"
+        android:text="Done"/>
+
+</RelativeLayout>

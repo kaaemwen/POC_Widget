@@ -21,16 +21,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/appwidget_text"
+        android:layout_centerHorizontal="true"
         android:text="@string/appwidget_btn"
-        />
-
-    <Button
-        android:id="@+id/btnPrincessTwo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/appwidget_text"
-        android:layout_toRightOf="@id/btnPrincess"
-        android:text="@string/appwidget_btn_two"
         />
 
 </RelativeLayout>

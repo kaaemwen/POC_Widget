@@ -19,6 +19,7 @@
         <receiver android:name=".PrincessWidget">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.kadev.poc_widget.EXPLICIT_UPDATE"/>
             </intent-filter>
 
             <meta-data
@@ -26,7 +27,19 @@
                 android:resource="@xml/princess_widget_info"/>
         </receiver>
 
-        <activity android:name=".ShowImageActivity">
+        <activity
+            android:name=".ShowImageActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.kadev.poc_widget.MainActivity"/>
+        </activity>
+        <activity
+            android:name="com.kadev.poc_widget.PrincessWidgetConfigActivity"
+            android:label="Princess Widget Config">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+            </intent-filter>
         </activity>
     </application>
 
